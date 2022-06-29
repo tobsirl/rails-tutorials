@@ -3,8 +3,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    user = User.first
-    render json: {user: user}
+    @user = User.first
   end
   
 end
