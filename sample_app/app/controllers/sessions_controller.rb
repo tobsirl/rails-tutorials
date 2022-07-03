@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    render 'new', status: unprocessable_entity
+    render 'new', status: :unprocessable_entity
   end
 
   def destroy
